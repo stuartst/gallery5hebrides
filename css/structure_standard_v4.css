@@ -1,0 +1,207 @@
+
+	/* Column Structure
+	----------------------------------------------- */
+
+	#main_menu_mobile {
+		display: none;
+	}
+	
+	#maincol {
+		float: left;
+		}
+
+	#subcol {
+		float: left;
+	}
+
+	#xcol {
+		float: right;
+	}
+	
+	#wrap {
+		float: right;
+	}
+	
+	body.col-B #subcol { display:none; }
+	body.col-B #wrap { display:none; }
+	
+	body.col-B #content { display:none; }
+	
+	
+	body.col-M #maincol { float:left; width:100%; }
+	body.col-M #wrap { float:left; }
+	
+	
+	body.col-SM #xcol, body.col-MS #xcol, body.col-M #subcol, body.col-M #xcol { display:none; }
+	body.col-MX #subcol { display:none; }
+	body.col-MX #wrap { float:left; }
+	
+	body.col-SM #maincol { float:right; }
+	body.col-MX #maincol { float:left; }
+	
+	body.col-SM #subcol { float:left; }
+	body.col-MX #xcol { float:right; }
+	
+	body.col-MSX #wrap { float:left; }
+	
+	/* Some defaults
+	----------------------------------------------- */
+	
+	.hasLayout/*
+, .listingitem
+*/ {
+		height:1px;
+	}
+	
+	html>body .hasLayout/*
+, html>body .listingitem
+*/  {
+		height:auto;
+		min-height:1px;
+		/*overflow-y:hidden;*/
+	}
+		
+	form {
+		padding:0px;
+		border:0px;
+		margin:0px;
+	}
+	
+	img {
+		padding:0px;
+		border:0px;
+		margin:0px;
+		display:block;
+	}
+	
+	img.inline {
+		display:inline;
+	}
+	
+	.clear {
+		clear: both;
+	}	
+	
+	.clearing {
+		clear: both;
+		display: block;
+		margin: 0;
+		padding: 0;
+		height: 0;
+		line-height: 1px;
+		font-size: 1px;
+		}
+	
+	.hide {
+		display: none;
+		}
+	
+	/* Menu Structure 
+	----------------------------------------------- */
+	/* Generic (all) menu styles */
+/*
+div.menu {
+	height:1px;
+}	
+
+ul.menu, ul.horizontallist {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	height:1px;
+	text-align:left;
+}
+
+html>body div.menu, html>body ul.menu, html>body ul.horizontallist {
+	height:auto;
+	overflow:hidden;
+}
+
+ul.menu li, ul.horizontallist li,div.menu.horizontal div.menuitem {
+	height:1px;
+	line-height:1em;
+	display: inline;
+}
+	
+html>body ul.menu li,  html>body ul.horizontallist li,div.menu.horizontal div.menuitem {
+	height:auto;
+	overflow:hidden;
+}
+
+ul.menu a, ul.horizontallist li a, div.menuitem a {
+	*//*text-decoration:none;
+	font-weight:bold;*//*
+	height:1em;
+}
+
+html>body ul.menu li a, html>body ul.horizontallist li a,  html>body div.menuitem a {
+	height:auto;
+	min-height:1em;
+	overflow:hidden;
+}
+
+ul.menu a:hover {
+	text-decoration:none;
+}
+
+ul.horizontallist li a:hover {
+	text-decoration:underline;
+}
+
+ul.menu.horizontal li, ul.horizontallist li, div.menu.horizontal div.menuitem, div.horizontallist div.listitem {
+	display:inline;
+	float:left;
+}
+
+ul.menu.horizontal li a, ul.horizontallist li a, div.menu.horizontal div.menuitem a {
+	float:left;
+}
+
+ul.menu li a, div.menuitem a {
+	display:block;
+	margin:0px;
+	border:0px;
+	padding:4px 4px 4px 4px;
+}
+
+ div.horizontallist div.listitem {
+ 	padding:4px;
+ }
+ 
+ div.horizontallist div.listitem.first {
+ 	padding-left:0px;
+ }
+*/
+
+	
+	/* Corners
+	----------------------------------------------- */
+	
+	div.corner1 {
+		top:0px;
+		left:0px;
+		background-position:0 0;
+	}
+	
+	div.corner2 {
+		top:0px;
+		right:0px;
+		background-position: 100% 0%;
+	}
+	
+	div.corner3 {
+		bottom:0px;
+		right:0px;
+		background-position: 100%  100%;
+	}
+	
+	div.corner4 {
+		bottom:0px;
+		left:0px;
+		background-position:  0 100%;
+	}
+	
+td,th {
+	vertical-align:top;
+}

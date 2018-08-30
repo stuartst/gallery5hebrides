@@ -1,0 +1,141 @@
+/*styles for mobile sites*/
+
+/*
+Maincol & Subcol 
+XCol hidden
+ */
+#xcol {
+	display: none;
+}
+#subcol, 
+#subcolContent {
+	width: auto !important;
+	float: none !important;
+	clear: both !important;
+}
+
+#subcol {
+	float: none;
+	clear: both;
+}
+/*
+Maincol & Xcol 
+Subcol hidden
+
+ */
+body.mobile-col-MX #subcol {
+	display: none;
+}
+
+body.mobile-col-MX #xcol {
+	display: block;
+}
+body.mobile-col-MX #xcol, 
+body.mobile-col-MX #xcolContent {
+	width: auto !important;
+	float: none !important;
+	clear: both !important;
+}
+
+body.mobile-col-MX #xcol {
+	float: none;
+	clear: both;
+}
+
+
+/*all*/
+
+div#uberContainer {
+	width: auto !important;
+	min-width: 0;
+}
+#footer, #header, #content, #maincolContent, #wrap, #contentOuter, #headerContent, #maincol,
+#footerContent, #locationContent, #topnav, #location,  #contentInner, #topnavContent {
+	width: auto !important;
+	float: none !important;
+	clear: both !important;
+}
+
+
+body.col-M #maincol_left, body.col-SM #maincol_left, body.col-SMX, body.col-MX #maincol_left, #maincol_left, 
+body.col-M #maincol_right, body.col-SM #maincol_right, body.col-SMX, body.col-MX #maincol_right, #maincol_right, 
+body.col-M #maincol_left_bottom, body.col-SM #maincol_left_bottom, body.col-SMX, body.col-MX #maincol_left_bottom, #maincol_left_bottom, 
+body.col-M #maincol_right_bottom, body.col-SM #maincol_right_bottom, body.col-SMX, body.col-MX #maincol_right_bottom, #maincol_right_bottom {
+	width: 100%;
+	float: none;
+}
+#maincol {
+	float: none;
+	clear: both;
+}
+
+/* " Modern" */
+div#contentheader, div#contentbody {
+	width: auto;
+}
+
+/* "portfolio" */
+div#homepage_text_container {
+	width: auto;
+}
+
+/* "Panels" */
+#xpanel, #x_divider {
+	display: none !important;
+}
+#logopanel, #left_divider {
+	float: none !important;
+	width: auto;
+}
+
+/* don't want minimum content height on mobile as subcol is beneath maincol */
+
+html > body #maincolContent ,
+html > body #xcolContent ,
+html > body #subcolContent {
+	height: auto !important;
+	min-height: 0 !important;
+}
+div.contentsection_clone ,
+div.contentsection_clone.cSelect_container ,
+div.contentsection_clone li a{
+	font-size: 100%;
+}
+#main_menu {
+	display: none;
+}
+#main_menu_mobile {
+	display: block;
+}
+
+div.survey {
+	width: auto;
+}
+
+div.survey label.fieldLabel, div.survey h3.fieldLabel {
+	width: auto;
+	float: none;
+	clear: both;
+}
+div.survey div.fieldInput, div.survey div.note {
+	width: auto;
+	clear: both;
+	float: none;
+}
+div.survey div.fieldInput .field {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box; /* css3 rec */
+	*behavior: url('_common/_styles/boxsizing.htc');
+	-moz-box-sizing: border-box; /* ff2 */
+	-ms-box-sizing: border-box; /* ie8 */
+	-webkit-box-sizing: border-box; /* safari3 */
+	-khtml-box-sizing: border-box; /* konqueror */
+}
+div.submit {
+	padding-left: 0;
+}
+input.button, input.buttonHi, input.submit, input.submitHi {
+	height: auto;
+	font-size: 100%;
+}
